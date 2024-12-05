@@ -1,0 +1,113 @@
+.client-review {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.client-review__container {
+    display:flex;
+    gap: 20px;
+    /* Espaciado entre las tarjetas */
+    white-space: nowrap;
+    /* Mantiene las tarjetas en una fila horizontal */
+    overflow:visible;
+    /* Oculta el contenido que excede del contenedor principal */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    margin-right: auto;
+   
+}
+
+.client-review__content {
+    
+    min-width: 300px;
+    /* Mantiene un ancho mínimo para la tarjeta */
+    max-width: 400px;
+    /* Establece un ancho máximo */
+    height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    /* Permite que el texto se ajuste automáticamente */
+    overflow: visible;
+    /* Asegura que el contenido no se recorte */
+    word-wrap: break-word;
+    /* Ajusta las palabras largas para que se rompan correctamente */
+    margin-bottom: 25px;
+    
+    
+}
+
+.client-review__text {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: center;
+
+
+}
+
+.client-review__name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .client-review__container {
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: center;
+        /* Centra las tarjetas horizontalmente */
+    }
+
+    .client-review__content {
+        margin-bottom: 20px;
+    }
+
+    .client-review__text {
+        font-size: 0.9rem;
+    }
+
+    .client-review__name {
+        font-size: 0.8rem;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .client-review__container {
+        gap: 10px;
+    }
+
+    .client-review__content {
+        min-width: 250px;
+        max-width: 300px;
+        height: 250px;
+        
+    }
+
+    
+
+
+}

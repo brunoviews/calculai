@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  width: 200px;
+  height: auto;
+
+    
+  
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-links a:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+
+.navbar-links a.active {
+  border-bottom: 2px solid orange;
+  padding-bottom: 5px;
+  
+  
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    align-items: center;
+    animation: slideDown 0.3s ease-in-out;
+  
+  }
+
+  .navbar-links.active {
+    display: flex;
+
+  }
+
+  .navbar-toggle {
+    display: block;
+    color: orange;
+  }
+}
+
+  
+  /* Animación para el menú desplegable */
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
