@@ -45,7 +45,7 @@ const Home = () => {
       {/* Alternating Sections */}
       <section className="content-section">
         <div className="content-image">
-          <img src="./../public/section1.jpg" alt="Feature Illustration" />
+          <img src="/section1.jpg" alt="Feature Illustration" />
         </div>
         <div className="content-text">
           <h2>El RoI y la toma de decisiones empresariales</h2>
@@ -71,13 +71,13 @@ const Home = () => {
           </p>
         </div>
         <div className="content-image">
-          <img src="./../public/section2.jpg" alt="AI Planning Illustration" />
+          <img src="/section2.jpg" alt="AI Planning Illustration" />
         </div>
       </section>
 
       <section className="content-section">
         <div className="content-image">
-          <img src="./../public/section3.jpg" alt="Feature Illustration" />
+          <img src="/section3.jpg" alt="Feature Illustration" />
         </div>
         <div className="content-text">
           <h2>Sectorial y estratégico</h2>
@@ -101,7 +101,7 @@ const Home = () => {
           </p>
         </div>
         <div className="content-image">
-          <img src="./../public/section4.jpg" alt="AI Planning Illustration" />
+          <img src="/section4.jpg" alt="AI Planning Illustration" />
         </div>
       </section>
 

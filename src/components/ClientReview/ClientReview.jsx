@@ -6,35 +6,35 @@ const ClientReview = ({ reviews }) => {
     {
       text: "Calcul AI fue de gran ayuda para diseñar, planificar, organizar estratégicamente y desarrollar todas las ideas necesarias para crear un nuevo proyecto y plan de negocios [...] Piensa en ello como un entrenador que te guía a lo largo del proceso.",
       name: "Juan Pérez",
-      logo: "./../public/clients/client.jpg",
+      logo: "/clients/client.jpg",
     },
     {
       text: "Esta herramienta me permitió organizar mis ideas y estructurar mi negocio desde cero. Fue como tener un mentor guiándome paso a paso",
       name: "Ana Gómez",
-      logo: "./../public/clients/client.jpg",
+      logo: "/clients/client.jpg",
     },
     {
       text: "Me ayudó a visualizar el camino que debía seguir para lanzar mi proyecto con confianza. Es como tener un mapa detallado",
       name: "Luis Fernández",
-      logo: "./../public/clients/client.jpg",
+      logo: "/clients/client.jpg",
     },
 
     {
       text: "Calcul AI me ayudó a crear un plan de negocios sólido y a entender cómo llevar a cabo mi proyecto. Me siento más seguro y preparado para lanzar mi negocio",
       name: "María Rodríguez",
-      logo: "./../public/clients/client.jpg",
+      logo: "/clients/client.jpg",
     },
 
     {
       text: "Calcul AI me ayudó a estructurar mi idea de negocio y a entender cómo llevarla a cabo. Me siento más seguro y preparado para lanzar mi proyecto",
       name: "Carlos Pérez",
-      logo: "./../public/clients/client.jpg",
+      logo: "/clients/client.jpg",
     },
 
     {
       text: "Calcul AI me ayudó a visualizar el camino que debía seguir para lanzar mi proyecto con confianza. Es como tener un mapa detallado",
       name: "María Gómez",
-      logo: "./../public/clients/client.jpg",
+      logo: "/clients/client.jpg",
     },
   ];
 
