@@ -20,7 +20,7 @@
     text-align: center;
     position: relative;
     animation: scroll 1s ease-in-out;
-    background-image: url('./bg.png');
+    background-image: url('./../bg.png');
    
     background-position: center;
     
