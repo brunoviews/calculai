@@ -4,9 +4,10 @@
   align-items: center;
   padding: 0px 40px;
   height: 80px;
+  width: 100%;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position:fixed;
   top: 0;
   z-index: 1000;
 }
@@ -15,6 +16,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-logo img {

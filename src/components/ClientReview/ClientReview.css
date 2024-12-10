@@ -1,35 +1,45 @@
+.title-review {
+    color: #202d41;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: center;
+
+}
+
+
 .client-review {
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
     position: relative;
     margin-bottom: 10px;
 }
 
 .client-review__container {
-    display:flex;
+    display: flex;
     gap: 20px;
     /* Espaciado entre las tarjetas */
     white-space: nowrap;
     /* Mantiene las tarjetas en una fila horizontal */
-    overflow:visible;
+    overflow: visible;
     /* Oculta el contenido que excede del contenedor principal */
     align-items: center;
     /* Centra el contenido verticalmente */
     margin-right: auto;
-   
+
 }
 
 .client-review__content {
-    
+    margin: 10px;
     min-width: 300px;
     /* Mantiene un ancho mínimo para la tarjeta */
     max-width: 400px;
     /* Establece un ancho máximo */
     height: 300px;
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -42,8 +52,17 @@
     word-wrap: break-word;
     /* Ajusta las palabras largas para que se rompan correctamente */
     margin-bottom: 25px;
-    
-    
+
+
+}
+
+.client-review__content:hover {
+    box-shadow: 0px 5px 5px 10px rgba(255, 166, 0, 0.306);
+    /* Añade una sombra al pasar el ratón por encima */
+    transition: all 0.3s ease;
+
+    color: black;
+
 }
 
 .client-review__text {
@@ -65,16 +84,23 @@
     height: 50px;
     border-radius: 50%;
     display: flex;
-    
-    
+
+
 }
 
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+
+}
 
 @media screen and (max-width: 768px) {
     .client-review__container {
         display: flex;
         flex-direction: row;
-        
+
         justify-content: center;
         /* Centra las tarjetas horizontalmente */
     }
@@ -104,10 +130,10 @@
         min-width: 250px;
         max-width: 300px;
         height: 250px;
-        
+
     }
 
-    
+
 
 
 }

@@ -1,12 +1,12 @@
-import { useState } from 'react'
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home'
-import Precio from './pages/Precio/Precio'
 import Producto from './pages/Producto/Producto'
 import Soluciones from './pages/Soluciones/Soluciones'
 import Contact from './pages/Contact/Contact'
+import Precio from './pages/Precio/Precio'
 
 
 

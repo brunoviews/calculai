@@ -1,12 +1,13 @@
-import React from 'react';
-import './Precio.css';
+import React from "react";
+import PricingContainer from "./pricing-component-container";
 
-function Precio() {
+
+const Precio = () => {
     return (
-        <div className='precio-container'>
-        <h1>Precio</h1>
+        <div className="App">
+          <PricingContainer />
         </div>
-    );
-    }
+      );
+}
 
 export default Precio;

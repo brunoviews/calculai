@@ -1,12 +1,10 @@
-
-
 .footer {
-  background: #fff;
-  color: #000;
-  padding: 25px 20px;
+  background: #202d41; /* Fondo blanco */
+  color: #000; /* Texto en negro */
+  padding: 30px 20px; /* Más espacio para un diseño aireado */
   text-align: center;
-  box-shadow: 0 -5px 10px #0000001a;
- 
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  border-top: 2px solid rgba(0, 0, 0, 0.1); /* Línea sutil */
   
 }
 
@@ -14,37 +12,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  
+  text-align: center;
+  gap: 15px; /* Espaciado más ajustado */
 }
 
 .footer-text {
-  font-size: 1em;
+  font-size: 0.9em; /* Tamaño ajustado */
   margin: 0;
-  color: black; /* Texto principal en negro */
+  color: #333; /* Texto gris oscuro para suavizar */
+  line-height: 1.5; /* Mejor lectura */
 }
 
 .footer-links {
   display: flex;
-  gap: 30px;
+  gap: 20px; /* Menor separación para compactar */
+  
 }
 
 .footer-link {
-  color: black; /* Enlaces en negro */
-  transition: color 0.3s, transform 0.3s;
-  font-size: 1.5em;
-  font-weight: bold;
+  color: orange; /* Enlaces gris oscuro */
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2em; /* Tamaño más discreto */
+  font-weight: 500; /* Peso mediano */
   text-decoration: none;
-
+  padding: 8px 10px; /* Área interactiva */
+  border-radius: 5px; /* Bordes suaves */
+ 
 }
 
 .footer-link:hover {
-  color: orange; /* Hover en anaranjado */
-  transform: translateY(-5px); /* Animación sutil */
+  color: white; /* Hover anaranjado */
+  transform: scale(1.1); /* Aumento sutil al pasar */
+  background: rgba(245, 166, 6, 0.05); /* Fondo ligero en hover */
   cursor: pointer;
 }
 
 .footer-link:active {
-  color: darkorange; /* Color más oscuro para clic */
+  color: #d2691e; /* Color clic */
+  transform: scale(1); /* Animación clic más natural */
 }
 
+.logo-footer {
+  width: 100px; /* Tamaño más pequeño */
+  height: auto; /* Proporcional */
+ margin: 0 auto; /* Centrado */
+}
+
+.logo-footer img {
+  width: 100%;
+  height: auto;
+  
+}
+.logo-footer img:hover {
+  transform: scale(1.2); /* Aumento sutil al pasar */
+  cursor: pointer;
+  transition: all 0.3s ease-out; 
+}

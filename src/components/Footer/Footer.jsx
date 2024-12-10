@@ -1,10 +1,14 @@
 // src/components/Footer/Footer.jsx
-import React from 'react';
-import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faTwitter, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import React from "react";
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
-function Footer({ links = [], text = "CALCUL AI © 2024" }) {
+function Footer({ links = [], text = "" }) {
   const iconMap = {
     Twitter: faTwitter,
     Facebook: faFacebook,
@@ -17,12 +21,25 @@ function Footer({ links = [], text = "CALCUL AI © 2024" }) {
         <p className="footer-text">{text}</p>
         <div className="footer-links">
           {links.map((link, index) => (
-            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="footer-link">
-              <FontAwesomeIcon icon={iconMap[link.name]} className="footer-icon" />
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <FontAwesomeIcon
+                icon={iconMap[link.name]}
+                className="footer-icon"
+              />
             </a>
           ))}
         </div>
+        
       </div>
+      <div className="logo-footer">
+          <img src="/logo_nobackground.png" alt="Logo" />
+        </div>
     </footer>
   );
 }

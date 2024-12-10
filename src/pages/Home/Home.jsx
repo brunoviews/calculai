@@ -2,10 +2,20 @@ import React from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
 import ClientReview from "../../components/ClientReview/ClientReview";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const StarRating = ({ count }) => {
+    return (
+      <div className="star-color">
+        {Array.from({ length: count }).map((_, index) => (
+          <FontAwesomeIcon key={index} icon={faStar} />
+        ))}
+      </div>
+    );
+  };
 
-  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,7 +28,7 @@ const Home = () => {
         <section className="hero">
           <div className="hero-content">
             <h1>
-              Transforma tu empresa con la potencia de la Inteligencia
+              Transforma tu empresa <br></br> con la potencia de la Inteligencia
               Artificial
             </h1>
             <p>
@@ -28,6 +38,13 @@ const Home = () => {
             <div className="hero-buttons">
               <button className="btn-hero-1">Descubre Más</button>
               <button className="btn-hero-2">Solicita una Demo</button>
+            </div>
+            <div className="rating-content">
+              <img src="/google-logo.svg" alt="Rating" />
+              <div className="rb-content">
+                <StarRating count={5} />
+                <p>4.8/5 Google Reviews</p>
+              </div>
             </div>
           </div>
         </section>
@@ -41,7 +58,6 @@ const Home = () => {
           puedes lograr casi cualquier objetivo comercial
         </h2>
       </div>
-
       {/* Alternating Sections */}
       <section className="content-section">
         <div className="content-image">
@@ -56,10 +72,11 @@ const Home = () => {
             proporcionando un enfoque estructurado y preciso para evaluar el
             impacto de la IA en tu empresa.
           </p>
+          <a className="button-section">Ver más</a>
         </div>
       </section>
 
-      <section className="content-section reverse">
+      <section className="content-section">
         <div className="content-text">
           <h2>Cómo CALCUL AI facilita el análisis del RoI</h2>
           <p>
@@ -69,6 +86,7 @@ const Home = () => {
             inversión y anticipar el momento en que comenzarán a generarse
             beneficios netos.
           </p>
+          <a className="button-section">Ver más</a>
         </div>
         <div className="content-image">
           <img src="/section2.jpg" alt="AI Planning Illustration" />
@@ -87,10 +105,11 @@ const Home = () => {
             alineados con los objetivos estratégicos de la empresa. Maximiza el
             retorno de inversión y mejora la competitividad.
           </p>
+          <a className="button-section">Ver más</a>
         </div>
       </section>
 
-      <section className="content-section reverse">
+      <section className="content-section">
         <div className="content-text">
           <h2>El RoI como puente entre visión y realidad</h2>
           <p>
@@ -99,14 +118,26 @@ const Home = () => {
             beneficios, optimizando recursos, reduciendo tiempos y mejorando la
             calidad del trabajo.
           </p>
+          <a className="button-section">Ver más</a>
         </div>
         <div className="content-image">
           <img src="/section4.jpg" alt="AI Planning Illustration" />
         </div>
       </section>
 
-      <section className="content-section">
-        <ClientReview  />
+      <section>
+        <ClientReview />
+      </section>
+
+      <section className="final-section">
+        <h2>¿Estás listo para transformar tu empresa?</h2>
+        <p className="final-text">
+          Sin riesgo.<br></br>Garantía de devolución de 30 días
+        </p>
+        <div className="hero-buttons">
+          <a className="button-section">Elige tu plan</a>
+          <a className="button-section">Ver más</a>
+        </div>
       </section>
     </motion.div>
   );

@@ -36,61 +36,71 @@ const ClientReview = ({ reviews }) => {
       name: "María Gómez",
       logo: "/clients/client.jpg",
     },
+
+    {
+      text: "Calcul AI me ayudó a estructurar mi idea de negocio y a entender cómo llevarla a cabo. Me siento más seguro y preparado para lanzar mi proyecto",
+      name: "Carlos Pérez",
+      logo: "/clients/client.jpg",
+    },
   ];
 
-  const reviewContainerRef = useRef(null);
+  const reviewContainerRef = useRef();
 
   useEffect(() => {
     const container = reviewContainerRef.current;
-    let animation;
 
-    // Variable para almacenar el tiempo transcurrido en la animación
+    // Duplica los elementos para garantizar la continuidad
+    const duplicatedContent = container.innerHTML;
+    container.innerHTML += duplicatedContent;
+
+    let animation;
     let animationProgress = 0;
 
     const startAnimation = () => {
-        animation = container.animate([
-            { transform: 'translateX(100%)' },
-            { transform: 'translateX(-100%)' }
-        ], {
-            duration: 23000,
-            iterations: Infinity
-        });
+      animation = container.animate([
+          { transform: 'translateX(100%)' },
+          { transform: 'translateX(-100%)' }
+      ], {
+          duration: 60000,
+          iterations: Infinity
+      });
 
-        // Si hay un progreso previo, ajusta el inicio
-        if (animationProgress > 0) {
-            animation.currentTime = animationProgress;
-        }
-    };
+      // Si hay un progreso previo, ajusta el inicio
+      if (animationProgress > 0) {
+          animation.currentTime = animationProgress;
+      }
+  };
 
-    const stopAnimation = () => {
-        if (animation) {
-            animationProgress = animation.currentTime; // Guarda el progreso actual
-            animation.pause(); // Pausa la animación
-        }
-    };
+  const stopAnimation = () => {
+      if (animation) {
+          animationProgress = animation.currentTime; // Guarda el progreso actual
+          animation.pause(); // Pausa la animación
+      }
+  };
 
-    // Agregar eventos para pausar y reanudar
-    container.addEventListener('mouseover', stopAnimation);
-    container.addEventListener('mouseout', startAnimation);
+  // Agregar eventos para pausar y reanudar
+  container.addEventListener('mouseover', stopAnimation);
+  container.addEventListener('mouseout', startAnimation);
 
-    startAnimation();
+  startAnimation();
 
-    // Limpieza al desmontar el componente
-    return () => {
-        container.removeEventListener('mouseover', stopAnimation);
-        container.removeEventListener('mouseout', startAnimation);
-    };
+  // Limpieza al desmontar el componente
+  return () => {
+      container.removeEventListener('mouseover', stopAnimation);
+      container.removeEventListener('mouseout', startAnimation);
+  };
 }, []);
-
-
   return (
     <div className="client-review">
+      <h2 className="title-review">
+        A nuestros clientes les encanta nuestro producto
+      </h2>
       <div className="client-review__container" ref={reviewContainerRef}>
         {reviews.map((review, index) => (
           <div key={index} className="client-review__content">
             <p className="client-review__text">{review.text}</p>
             <p className="client-review__name">{review.name}</p>
-            <div>
+            <div className="info-block">
               <img src={review.logo} alt={review.name} className="logo-img" />
             </div>
           </div>
