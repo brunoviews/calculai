@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./Home.css";
 import { motion } from "framer-motion";
 import ClientReview from "../../components/ClientReview/ClientReview";
@@ -135,7 +136,11 @@ const Home = () => {
           Sin riesgo.<br></br>Garantía de devolución de 30 días
         </p>
         <div className="hero-buttons">
-          <a className="button-section">Elige tu plan</a>
+         <Link
+            to="/precio"
+            className="button-section">
+            Descubre Nuestros Planes
+          </Link>
           <a className="button-section">Ver más</a>
         </div>
       </section>
