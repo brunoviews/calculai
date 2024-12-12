@@ -1,0 +1,34 @@
+.notification-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background: #202d41; /* Fondo blanco */
+    color: orange; /* Texto en negro */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    border-top: 2px solid rgba(0, 0, 0, 0.1); /* Línea sutil */
+    width: 100%;
+}
+
+.notification-container {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32px;
+}
+
+.link-to-pricing{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+    border-bottom: none;
+
+}
+
+.link-to-pricing:hover {
+    background-color: white;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}

@@ -4,12 +4,12 @@ import "./ClientReview.css";
 const ClientReview = ({ reviews }) => {
   reviews = [
     {
-      text: "Calcul AI fue de gran ayuda para diseñar, planificar, organizar estratégicamente y desarrollar todas las ideas necesarias para crear un nuevo proyecto y plan de negocios [...] Piensa en ello como un entrenador que te guía a lo largo del proceso.",
+      text: "CalcDIGITALY allowed me to organize my ideas and structure my business from scratch. It was like having a mentor guiding me step by step",
       name: "Juan Pérez",
       logo: "/clients/client.jpg",
     },
     {
-      text: "Esta herramienta me permitió organizar mis ideas y estructurar mi negocio desde cero. Fue como tener un mentor guiándome paso a paso",
+      text: "It helped me visualize the path I needed to take to launch my project with confidence. It’s like having a detailed map",
       name: "Ana Gómez",
       logo: "/clients/client.jpg",
     },
@@ -20,28 +20,18 @@ const ClientReview = ({ reviews }) => {
     },
 
     {
-      text: "Calcul AI me ayudó a crear un plan de negocios sólido y a entender cómo llevar a cabo mi proyecto. Me siento más seguro y preparado para lanzar mi negocio",
+      text: "DIGITALY helped me structure my business idea and understand how to implement it. I feel more confident and ready to launch my project.",
       name: "María Rodríguez",
       logo: "/clients/client.jpg",
     },
 
     {
-      text: "Calcul AI me ayudó a estructurar mi idea de negocio y a entender cómo llevarla a cabo. Me siento más seguro y preparado para lanzar mi proyecto",
+      text: "DIGITALY helped me visualize the path I needed to take to launch my project with confidence. It’s like having a detailed map",
       name: "Carlos Pérez",
       logo: "/clients/client.jpg",
     },
 
-    {
-      text: "Calcul AI me ayudó a visualizar el camino que debía seguir para lanzar mi proyecto con confianza. Es como tener un mapa detallado",
-      name: "María Gómez",
-      logo: "/clients/client.jpg",
-    },
-
-    {
-      text: "Calcul AI me ayudó a estructurar mi idea de negocio y a entender cómo llevarla a cabo. Me siento más seguro y preparado para lanzar mi proyecto",
-      name: "Carlos Pérez",
-      logo: "/clients/client.jpg",
-    },
+   
   ];
 
   const reviewContainerRef = useRef();
@@ -93,7 +83,7 @@ const ClientReview = ({ reviews }) => {
   return (
     <div className="client-review">
       <h2 className="title-review">
-        A nuestros clientes les encanta nuestro producto
+      Success stories with DIGITALY
       </h2>
       <div className="client-review__container" ref={reviewContainerRef}>
         {reviews.map((review, index) => (

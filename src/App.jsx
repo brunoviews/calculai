@@ -11,6 +11,7 @@ import Precio from './pages/Precio/Precio'
 
 
 
+
 import './App.css'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
     <>
       <div>
     <Router>
+      
       <Navbar links={navLinks}/>
       <Routes>
         <Route path="/" element={<Home />} />

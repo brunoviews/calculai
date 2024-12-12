@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
+import Banner from "../Banner/Banner";
 
 
 function Navbar({ links = [], logoText = "" }) {
@@ -20,6 +20,7 @@ function Navbar({ links = [], logoText = "" }) {
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
     >
+       <Banner />
       <header className="navbar">
         <div className="navbar-logo">
           <Link to="/">

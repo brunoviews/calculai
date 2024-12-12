@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PricingComponent from "./pricing-component";
+import PricingComponentEnterprise from "./pricing-component-enterprise";
 import { motion } from "framer-motion"; 
 
 import "./pricing.css";
@@ -69,7 +70,12 @@ class PricingContainer extends Component {
               features={premiumFeatures}
               isMonthlyActive={this.state.isMontlyActive}
             />
+            <PricingComponentEnterprise
+                        
+              
+            />
           </label>
+          
         </div>
         
       </div>

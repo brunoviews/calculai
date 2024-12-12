@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import { motion } from "framer-motion";
 import ClientReview from "../../components/ClientReview/ClientReview";
@@ -29,16 +29,19 @@ const Home = () => {
         <section className="hero">
           <div className="hero-content">
             <h1>
-              Transforma tu empresa <br></br> con la potencia de la Inteligencia
-              Artificial
+              Transform your business with DIGITALY <br></br>
             </h1>
             <p>
-              Optimiza recursos, maximiza beneficios y demuestra el valor de la
-              innovación con un análisis claro del Retorno de la Inversión (RoI)
+              Boost your business with the perfect tool for digital
+              transformation. DIGITALY leverages artificial intelligence and
+              data engineering to automatically create a personalized digital
+              transformation plan for your company. Optimize resources, maximize
+              benefits, and showcase the value of innovation with a clear focus
+              on measurable and sustainable results.
             </p>
             <div className="hero-buttons">
-              <button className="btn-hero-1">Descubre Más</button>
-              <button className="btn-hero-2">Solicita una Demo</button>
+              <button className="btn-hero-1">See How It Works</button>
+              <button className="btn-hero-2">Sign up</button>
             </div>
             <div className="rating-content">
               <img src="/google-logo.svg" alt="Rating" />
@@ -54,9 +57,9 @@ const Home = () => {
       <div className="title">
         <h2>
           {" "}
-          Con las herramientas adecuadas y un poco de orientación,
+          Everything you need to plan,
           <br></br>
-          puedes lograr casi cualquier objetivo comercial
+          launch & grow
         </h2>
       </div>
       {/* Alternating Sections */}
@@ -65,13 +68,13 @@ const Home = () => {
           <img src="/section1.jpg" alt="Feature Illustration" />
         </div>
         <div className="content-text">
-          <h2>El RoI y la toma de decisiones empresariales</h2>
+          <h2>The impact of DIGITALY on business decision-making</h2>
           <p>
-            El retorno de la inversión (RoI) permite determinar la efectividad
-            financiera de los proyectos, optimizar recursos y maximizar
-            beneficios. CALCUL AI automatiza decisiones basadas en métricas,
-            proporcionando un enfoque estructurado y preciso para evaluar el
-            impacto de la IA en tu empresa.
+            DIGITALY automates the creation of strategic plans, helping you
+            optimize resources and maximize benefits through an approach based
+            on artificial intelligence and precise data. With our solutions, you
+            can structure and accurately assess the impact of digitalization on
+            your business.
           </p>
           <a className="button-section">Ver más</a>
         </div>
@@ -79,13 +82,15 @@ const Home = () => {
 
       <section className="content-section">
         <div className="content-text">
-          <h2>Cómo CALCUL AI facilita el análisis del RoI</h2>
+          <h2>How DIGITALY facilitates digital transition</h2>
           <p>
-            CALCUL AI usa análisis cuantitativo para calcular el RoI, eliminando
-            subjetividades y mejorando la capacidad de análisis financiero. Esta
-            herramienta permite visualizar la evolución financiera de la
-            inversión y anticipar el momento en que comenzarán a generarse
-            beneficios netos.
+            DIGITALY employs advanced artificial intelligence and data analysis
+            to automatically drive your path to digitalization, eliminating
+            subjectivity and enhancing analytical capabilities. This tool allows
+            you to visualize the financial evolution of your digital investments
+            and anticipate the moment when you will start generating net
+            benefits, ensuring informed decisions aligned with your business
+            objectives
           </p>
           <a className="button-section">Ver más</a>
         </div>
@@ -99,12 +104,13 @@ const Home = () => {
           <img src="/section3.jpg" alt="Feature Illustration" />
         </div>
         <div className="content-text">
-          <h2>Sectorial y estratégico</h2>
+          <h2>Adapted to different sectors and strategies</h2>
           <p>
-            Nuestra solución se adapta a diferentes sectores, gestiona el
-            cambio, ajusta desviaciones y asegura que los proyectos de IA estén
-            alineados con los objetivos estratégicos de la empresa. Maximiza el
-            retorno de inversión y mejora la competitividad.
+            DIGITALY adapts to the needs of various sectors, facilitating change
+            management, adjusting deviations, and ensuring that digitalization
+            projects align with the strategic objectives of your organization.
+            Our solution maximizes return on investment and improves your
+            business competitiveness.
           </p>
           <a className="button-section">Ver más</a>
         </div>
@@ -112,12 +118,14 @@ const Home = () => {
 
       <section className="content-section">
         <div className="content-text">
-          <h2>El RoI como puente entre visión y realidad</h2>
+          <h2>Digitalization as a bridge between vision and reality</h2>
           <p>
-            Hablar de RoI es hablar de confianza. Un análisis claro y bien
-            fundamentado muestra cómo cada euro invertido se traduce en
-            beneficios, optimizando recursos, reduciendo tiempos y mejorando la
-            calidad del trabajo.
+            Talking about DIGITALY is talking about trust. DIGITALY uses
+            artificial intelligence to generate clear and well-founded analyses
+            that show how every euro invested in your transformation translates
+            into benefits, optimizing resources, reducing time, and improving
+            work quality. With DIGITALY, transforming your vision into tangible
+            results is easier than ever.
           </p>
           <a className="button-section">Ver más</a>
         </div>
@@ -131,14 +139,13 @@ const Home = () => {
       </section>
 
       <section className="final-section">
-        <h2>¿Estás listo para transformar tu empresa?</h2>
+        <h2>Are you ready to transform your business?</h2>
         <p className="final-text">
-          Sin riesgo.<br></br>Garantía de devolución de 30 días
+          Risk-free. <br></br>DIGITALY offers a 30-day money-back guarantee.{" "}
+          <br></br> Discover everything you can achieve!
         </p>
         <div className="hero-buttons">
-         <Link
-            to="/precio"
-            className="button-section">
+          <Link to="/precio" className="button-section">
             Descubre Nuestros Planes
           </Link>
           <a className="button-section">Ver más</a>
