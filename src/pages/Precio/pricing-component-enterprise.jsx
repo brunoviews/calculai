@@ -1,19 +1,21 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./pricing.css";
 
 const PricingComponentEnterprise = () => {
   return (
-    <div className="pricing-card">
-      <p className="pricing-header"></p>
-      <div className="price-container">
-        <p className="toggle-manually">Enterprise</p>
+    <div className="pricing-card-enterprise">
+      <div className="price-container-enterprise">
+        <p className="toggle-manually-enterprise">Enterprise</p>
       </div>
       <ul>
-        <span>
+        <li>
           Get in touch with us for a custom plan that fits your needs.
-        </span>
+        </li>
       </ul>
+      <Link to="/contact">
       <button>Contact us</button>
+      </Link>
     </div>
   );
 };

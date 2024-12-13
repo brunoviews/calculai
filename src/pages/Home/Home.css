@@ -298,10 +298,15 @@
 
     .hero {
 
-        height: 70vh;
+        height: auto;
         width: auto;
 
     }
+
+    .hero p{
+        width: 80%;
+    }
+
 
     .final-section h2 {
         font-size: 30px;
@@ -309,6 +314,24 @@
         text-align: center;
         line-height: 1.3;
     }
+
+    .rating-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .rb-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .rb-content p {
+        margin: 0 auto;
+    }
+   
+
 
 
 }

@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Banner from "../Banner/Banner";
+import SignUpButtons from "../SignUpButtons/SignUp";
 
 
 function Navbar({ links = [], logoText = "" }) {
@@ -33,6 +34,7 @@ function Navbar({ links = [], logoText = "" }) {
           <h3 className="logo-text">{logoText}</h3>
         </div>
         <nav className={`navbar-links ${isOpen ? "active" : ""}`}>
+          
           {links.map((link, index) => (
             <Link
               key={index}
@@ -43,10 +45,13 @@ function Navbar({ links = [], logoText = "" }) {
               {link.name}
             </Link>
           ))}
+          <SignUpButtons />
         </nav>
+        
         <div className="navbar-toggle" onClick={toogleMenu}>
           &#9776;
         </div>
+        
       </header>
     </motion.div>
   );

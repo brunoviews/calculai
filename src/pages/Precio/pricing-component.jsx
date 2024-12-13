@@ -34,7 +34,7 @@ class PricingComponent extends Component {
           ))}
           </li>
         </ul>
-        <button>Comprar</button>
+        <button>Buy</button>
       </div>
     );
   }

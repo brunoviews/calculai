@@ -76,7 +76,7 @@ const Home = () => {
             can structure and accurately assess the impact of digitalization on
             your business.
           </p>
-          <a className="button-section">Ver más</a>
+          <a className="button-section">See How It Works</a>
         </div>
       </section>
 
@@ -92,7 +92,7 @@ const Home = () => {
             benefits, ensuring informed decisions aligned with your business
             objectives
           </p>
-          <a className="button-section">Ver más</a>
+          <a className="button-section">See How It Works</a>
         </div>
         <div className="content-image">
           <img src="/section2.jpg" alt="AI Planning Illustration" />
@@ -112,7 +112,7 @@ const Home = () => {
             Our solution maximizes return on investment and improves your
             business competitiveness.
           </p>
-          <a className="button-section">Ver más</a>
+          <a className="button-section">See How It Works</a>
         </div>
       </section>
 
@@ -127,7 +127,7 @@ const Home = () => {
             work quality. With DIGITALY, transforming your vision into tangible
             results is easier than ever.
           </p>
-          <a className="button-section">Ver más</a>
+          <a className="button-section">See How It Works</a>
         </div>
         <div className="content-image">
           <img src="/section4.jpg" alt="AI Planning Illustration" />
@@ -146,9 +146,9 @@ const Home = () => {
         </p>
         <div className="hero-buttons">
           <Link to="/precio" className="button-section">
-            Descubre Nuestros Planes
+            Choose Your Plan Now
           </Link>
-          <a className="button-section">Ver más</a>
+          <a className="button-section">See How It Works</a>
         </div>
       </section>
     </motion.div>

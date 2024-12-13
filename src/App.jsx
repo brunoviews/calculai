@@ -7,21 +7,17 @@ import Producto from './pages/Producto/Producto'
 import Soluciones from './pages/Soluciones/Soluciones'
 import Contact from './pages/Contact/Contact'
 import Precio from './pages/Precio/Precio'
-
-
-
-
-
 import './App.css'
 
 function App() {
   
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Producto", path: "/producto" },
-    { name: "Soluciones", path: "/soluciones" },
-    { name: "Precio", path: "/precio" },
+    { name: "Product", path: "/producto" },
+    { name: "Solutions", path: "/soluciones" },
+    { name: "Pricing", path: "/precio" },
     { name: "Contact", path: "/contact" },
+    
     
   ];
 
