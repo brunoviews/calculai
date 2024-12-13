@@ -20,17 +20,17 @@ class PricingContainer extends Component {
 
   render() {
     const basicFeatures = [
-      "Instrucciones Paso a Paso",
-      "Declaraciones de Licitación",
-      "Pronóstico Financiero Completo",
+      "Step-by-Step Instructions",
+      "Bid Statements",
+      "Basic Financial Forecast",
     ];
 
     const premiumFeatures = [
-      "Instrucciones Paso a Paso",
-      "Declaraciones de Licitación",
-      "Pronóstico Financiero Completo",
-      "Soporte Prioritario",
-      "Acceso a Nuevas Funcionalidades",
+      "Step-by-Step Instructions",
+      "Bid Statements",
+      "Basic Financial Forecast",
+      "Advanced Financial Forecast",
+      "Customized Financial Forecast",
     ];
     return (
       <motion.div

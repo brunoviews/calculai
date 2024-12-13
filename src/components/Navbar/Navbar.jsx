@@ -31,7 +31,7 @@ function Navbar({ links = [], logoText = "" }) {
               className="logo-image"
             />
           </Link>
-          <h3 className="logo-text">{logoText}</h3>
+          
         </div>
         <nav className={`navbar-links ${isOpen ? "active" : ""}`}>
           

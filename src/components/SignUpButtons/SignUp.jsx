@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 function SignUp() {
     return (
-        <div className="signup-container">
+        <div className="sign-container">
             
             <Link to="/precio">
                 <button className="signup-button">Sign Up</button>

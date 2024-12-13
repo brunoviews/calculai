@@ -4,7 +4,7 @@ import "./ClientReview.css";
 const ClientReview = ({ reviews }) => {
   reviews = [
     {
-      text: "CalcDIGITALY allowed me to organize my ideas and structure my business from scratch. It was like having a mentor guiding me step by step",
+      text: "DIGITALY allowed me to organize my ideas and structure my business from scratch. It was like having a mentor guiding me step by step",
       name: "Juan Pérez",
       logo: "/clients/client.jpg",
     },
@@ -13,11 +13,7 @@ const ClientReview = ({ reviews }) => {
       name: "Ana Gómez",
       logo: "/clients/client.jpg",
     },
-    {
-      text: "Me ayudó a visualizar el camino que debía seguir para lanzar mi proyecto con confianza. Es como tener un mapa detallado",
-      name: "Luis Fernández",
-      logo: "/clients/client.jpg",
-    },
+    
 
     {
       text: "DIGITALY helped me structure my business idea and understand how to implement it. I feel more confident and ready to launch my project.",
@@ -25,11 +21,7 @@ const ClientReview = ({ reviews }) => {
       logo: "/clients/client.jpg",
     },
 
-    {
-      text: "DIGITALY helped me visualize the path I needed to take to launch my project with confidence. It’s like having a detailed map",
-      name: "Carlos Pérez",
-      logo: "/clients/client.jpg",
-    },
+    
 
    
   ];
