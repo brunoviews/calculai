@@ -28,11 +28,11 @@ class PricingComponent extends Component {
           </p>
         </div>
         <ul>
-          <li>
+          
           {this.props.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
-          </li>
+          
         </ul>
         <button>Buy</button>
       </div>

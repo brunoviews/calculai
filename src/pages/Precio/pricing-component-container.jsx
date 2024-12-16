@@ -54,7 +54,7 @@ class PricingContainer extends Component {
               </div>
               <p>Monthly</p>
             </div>
-            <label className="pricing-card-container" for="switch">
+            <label className="pricing-card-container" htmlFor="switch">
               <PricingComponent
                 pricingHeader="Basic"
                 priceAnnually="199.99"

@@ -42,8 +42,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         
       </Routes>
+      <Footer links={footerLinks}/>
     </Router>
-    <Footer links={footerLinks}/>
+    
     </div>
  
     </>

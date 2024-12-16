@@ -1,5 +1,6 @@
-// src/components/Footer/Footer.jsx
+
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,31 +17,35 @@ function Footer({ links = [], text = "" }) {
   };
 
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <p className="footer-text">{text}</p>
-        <div className="footer-links">
-          {links.map((link, index) => (
-            <a
-              key={index}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-link"
-            >
-              <FontAwesomeIcon
-                icon={iconMap[link.name]}
-                className="footer-icon"
-              />
-            </a>
-          ))}
+    <>
+      <footer className="footer">
+        <div className="footer-content">
+          <p className="footer-text">{text}</p>
+          <div className="footer-links">
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                <FontAwesomeIcon
+                  icon={iconMap[link.name]}
+                  className="footer-icon"
+                />
+              </a>
+            ))}
+          </div>
+
         </div>
-        
-      </div>
-      <div className="logo-footer">
-          <img src="/logo_nobackground.png" alt="Logo" />
-        </div>
-    </footer>
+        <Link to="/">
+          <div className="logo-footer">
+            <img src="./ico.png" alt="Logo" />
+          </div>
+        </Link>
+      </footer>
+    </>
   );
 }
 
