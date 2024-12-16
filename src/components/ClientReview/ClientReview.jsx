@@ -4,12 +4,12 @@ import "./ClientReview.css";
 const ClientReview = ({ reviews }) => {
   reviews = [
     {
-      text: "DIGITALY allowed me to organize my ideas and structure my business from scratch. It was like having a mentor guiding me step by step",
+      text: "DIGITALY allowed me to organize my ideas and structure my business from scratch. It was like having a mentor guiding me step by step.",
       name: "Juan Pérez",
       logo: "/clients/client.jpg",
     },
     {
-      text: "It helped me visualize the path I needed to take to launch my project with confidence. It’s like having a detailed map",
+      text: "It helped me visualize the path I needed to take to launch my project with confidence. It’s like having a detailed map.",
       name: "Ana Gómez",
       logo: "/clients/client.jpg",
     },

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PricingComponent from "./pricing-component";
 import PricingComponentEnterprise from "./pricing-component-enterprise";
 import { motion } from "framer-motion";
-
 import "./pricing.css";
 
 class PricingContainer extends Component {
@@ -72,12 +71,15 @@ class PricingContainer extends Component {
               />
               <PricingComponentEnterprise />
             </label>
-
+            <div className="pricing-footer">
+            <p>💲All subscriptions come with a 30-day money-back guarantee.</p>
+            </div>
           </div>
 
-        </div>
-        <div className="pricing-footer">
-          <p>💲All subscriptions come with a 30-day money-back guarantee.</p>
+        
+        
+          
+          
         </div>
 
       </motion.div>

@@ -21,20 +21,20 @@ function Navbar({ links = [], logoText = "" }) {
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
     >
-       <Banner />
+      <Banner />
       <header className="navbar">
         <div className="navbar-logo">
           <Link to="/">
             <img
               src="./logo.png"
-              alt="Calcul AI Logo"
+              alt="Digitaly Logo"
               className="logo-image"
             />
           </Link>
-          
+
         </div>
         <nav className={`navbar-links ${isOpen ? "active" : ""}`}>
-          
+
           {links.map((link, index) => (
             <Link
               key={index}
@@ -45,13 +45,13 @@ function Navbar({ links = [], logoText = "" }) {
               {link.name}
             </Link>
           ))}
-          <SignUpButtons />
+
         </nav>
-        
+        <SignUpButtons/>
         <div className="navbar-toggle" onClick={toogleMenu}>
           &#9776;
         </div>
-        
+
       </header>
     </motion.div>
   );

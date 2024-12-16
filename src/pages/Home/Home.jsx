@@ -46,7 +46,7 @@ const Home = () => {
             <div className="rating-content">
               <img src="/google-logo.svg" alt="Rating" />
               <div className="rb-content">
-                <StarRating count={5} />
+              <StarRating count={5} className="star-rating" />
                 <p>4.8/5 Google Reviews</p>
               </div>
             </div>

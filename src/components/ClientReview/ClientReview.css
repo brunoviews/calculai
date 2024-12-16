@@ -26,6 +26,7 @@
     align-items: center;
     /* Centra el contenido verticalmente */
     margin-right: auto;
+    
 
 }
 
@@ -69,7 +70,7 @@
     font-size: 1rem;
     margin-bottom: 5px;
     text-align: center;
-
+    margin: 50px auto;
 
 }
 
@@ -111,6 +112,7 @@
 
     .client-review__text {
         font-size: 0.9rem;
+        margin: 45px auto;
     }
 
     .client-review__name {
@@ -122,9 +124,7 @@
         height: 40px;
     }
 
-    .client-review__container {
-        gap: 10px;
-    }
+
 
     .client-review__content {
         min-width: 250px;
@@ -134,8 +134,10 @@
     }
 
     .title-review {
-        font-size: 30px;
-       margin-bottom: 20px;
+        color: #202d41;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1.3;
     }
 
 
