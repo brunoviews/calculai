@@ -14,7 +14,6 @@ function App() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Product", path: "/producto" },
-    { name: "Solutions", path: "/soluciones" },
     { name: "Pricing", path: "/precio" },
     { name: "Contact", path: "/contact" },
     
